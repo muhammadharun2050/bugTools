@@ -1,0 +1,29 @@
+                                                     SCaNNING 
+1) Nmap (uses blew)
+for check open port >nmap -p 1-65535 -T4 -A -v (website/ip)
+2) Hpping3 (uses blew)
+for icmp ping > hping3 --icmp  (ipAdress)
+for udp scan > hping3 --udp (ipAddress) -p 80
+for  ACK scan > hping3 -A (ipAdress) -p 80
+for syn > hping3 --syn 50-60 -S (ip) -V
+for see sequence number >sudo hping3 --syn  (ip)-p 80 --tcp-timestamp
+for FIN,PUDH,URG scan > hping3 -F -P -U (ip) -p 80
+
+
+                                             HOST DISCOVERY
+___________________________________________________________________________
+for ARP ping scan> nmap -sn -PR (ip)
+for UDP Ping scan> nmap -sn -PU (ip)
+also use >>sudo nmap -sn -PU (ip) -Pn
+for echo ping scan> namp -sn -PE (ip)
+for timeStamp > nmap -sn -PP (ip)
+                               host discover technique
+                            _______________________________
+for for syn ping scan > nmap -sn -PS (ip)
+for ack ping scan > nmap -sn -PA (ip)
+for ip protocal ping > nmap -sn -PO (ip)
+
+                                     port scanning technique
+__________________________________________________________________________
+for all tcp port scan > nmap -sT (ip)
+

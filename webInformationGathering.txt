@@ -1,0 +1,39 @@
+++++++++++Information Gathering -- +++++++========
+1. whois.com {website}
+2. whois.domainsearch.com {website}
+3. robot.txt file download 
+
+++++++++Server Footprinting +++++++++++
+1. netcat (how to use this tools)
+nc -vv abc.com 80 - {use this command }
+2. telnet {how to use }
+telnet abc.com 80 -{use this command}
+after than press twice }- GET / HTTP/1.0
+3. recon-ng (github tools)
+4. code.google.com
+
+++++++Enumeriting web server information using Nmap+++++++++
+1./ discover virtual domains with hostmap
+nmap --script hostmap (host) 
+2./ detetc vulnerable that use trace mathod 
+nmap --script htt-trace -p80 localhost
+
+++++++website cloning ++++++++++
+1.Ncollector studio  (website)
+2. httrack
+
++++++++ find out defult password website ++++++
+1. open-sez.me {website}
+2. cirt.net/passsword {website}
+3. routerpassword.com
+4. defult-password.info
+
++++++++finding default servser content +++++++
+nikto -h abc.com -Tuning x
+
+++++ vulnerability scanner ++++++
+1. acunetix scanner 
+
++++++passowrd cracling ++++++++
+1.hashtcat (kali tools)
+2.THC  hydra ( git tools)
